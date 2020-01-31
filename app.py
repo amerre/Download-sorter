@@ -3,7 +3,7 @@ from os import path
 
 # -----------Functions-----------
 # Create directories
-def create_dir(directory, parent_directory = "/Users/Adrien/dev/python/Download-organizer"):
+def create_dir(directory, parent_directory = os.getcwd()):
     try:
         path = os.path.join(parent_directory, directory)
         os.mkdir(path)
@@ -46,10 +46,14 @@ for file in files:
     elif  extension == "exe":
         filesList["executables"].append(file)
 
+
 # Created directories that we need in function or the files
 for fileType in filesList:
     if filesList[fileType]:
         create_dir(fileType)
         for file in filesList[fileType]:
-            os.rename("/Users/Adrien/dev/python/Download-organizer/" + file, "/Users/Adrien/dev/python/Download-organizer/" + fileType + "/" + file)
+            os.rename(os.getcwd() + "/" + file, os.getcwd() + "/" + fileType + "/" + file)
+            print(os.getcwd() + "/" + file)
             print(file + " has been sorted in the " + fileType + " directory")
+
+

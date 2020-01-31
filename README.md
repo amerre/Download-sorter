@@ -9,7 +9,7 @@ Feel free to notify me if you find something that I can improve.
 
 ## Run this project
 
-In the _testing_files_ directory I've put empty files in order to test rapidly the script. All you need to do is to move the _testing_files_'s content in the root of the project, and run the script. Normally,directories must be created and everything should be sorted immediately.
+In the _testing_files_ directory I've put empty files in order to test rapidly the script. All you need to do is to move the python file in the _testing_files_, and run the script. Normally, directories must be created and everything should be sorted immediately. To use in real life, just put the python file in your downloading file or anything that you want to sort, and run it.
 
 ## License
 
