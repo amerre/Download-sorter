@@ -34,7 +34,7 @@ for file in files:
     if extension == "avi" or extension == "mkv" or extension == "mp4" or extension == "mov":
         toSort["videos"].append(file)
     # Text based documents (pdf, doc, txt...)
-    elif extension == "pdf" or extension == "doc" or extension == "txt" or extension == "odf":
+    elif extension == "pdf" or extension == "doc" or extension == "txt" or extension == "odf" or extension == "docx":
         toSort["documents"].append(file)
     # Compressed documents (zip, rar...)
     elif  extension == "zip" or extension == "rar":
@@ -43,7 +43,7 @@ for file in files:
     elif  extension == "png" or extension == "jpg":
         toSort["photos"].append(file)
     # Executables (exe...)
-    elif  extension == "exe":
+    elif  extension == "exe" or extension == "dmg":
         toSort["executables"].append(file)
 
 # Where we distinguish directories and sort them in the array
